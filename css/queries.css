@@ -1,0 +1,146 @@
+@media only screen and (max-width:767px) {
+    body {
+        text-align: center;
+    }
+    .btn {
+        margin-top: 40px;
+        margin-bottom: 70px;
+    }
+    .header-top {
+        top: 0%;
+        padding: 7.5% 10%;
+    }
+    .first {
+        background-color: var(--dark-violet);
+        position: relative;
+        height: 140vh;
+        width: 102%;
+    }
+    .first-text-section {
+        margin-top: -8%;
+    }
+    .first-sec {
+        flex-direction: column-reverse;
+    }
+    .first-sec::before {
+        background-image: url(images/bg-pattern-intro-left-mobile.svg);
+        top: -35%;
+        left: 0;
+        position: absolute;
+        width: 40%;
+        display: none;
+    }
+    .first-sec::after {
+        background-image: url(images/bg-pattern-intro-right-mobile.svg);
+        top: 90%;
+        right: 0;
+        position: absolute;
+        display: none;
+    }
+    .first-sec-img {
+        background-image: url(images/image-intro-mobile.jpg);
+        background-size: 100%;
+        width: 110%;
+        background-repeat: no-repeat;
+        height: 70vh;
+        margin-top: -6%;
+    }
+    .secsec {
+        margin-top: 15%;
+    }
+    .purplebox {
+        background-image: url(images/bg-pattern-how-we-work-mobile.svg);
+        padding: 20px;
+    }
+    .purplebox-sec {
+        flex-direction: column;
+    }
+    h4 {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    h1 {
+        font-size: 48px;
+        margin-top: 50px;
+    }
+    h1:before {
+        display: none;
+    }
+    h2 {
+        font-size: 43px;
+        margin: 10%;
+        padding: 0%;
+    }
+    h2::before {
+        margin-left: 20%;
+        margin-top: 50px;
+    }
+    .threeicon {
+        display: list-item;
+        text-align: center;
+    }
+    .box1,
+    .box2,
+    .box3 {
+        margin-top: 30px;
+    }
+    .purplebox {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hash {
+        height: 150vh;
+    }
+    .lug {
+        margin-top: 50px;
+    }
+    .logicon {
+        display: flex;
+        flex-direction: column;
+    }
+    .nalin {
+        margin-right: 26%;
+        margin-top: 25px;
+    }
+    h5 {
+        margin-top: 50px;
+    }
+    .footlinks {
+        flex-direction: column;
+    }
+    /* HAMBURGER */
+    .menu-btn {
+        display: flex;
+        margin-left: 50%;
+    }
+    .menu-nav {
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        top: 100px;
+        right: 50px;
+        left: 50px;
+        height: 40vh;
+        transform: translateX(100vw);
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        background-color: hsl(270, 9%, 17%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 1;
+    }
+    .menu-nav li a {
+        color: hsl(273, 4%, 51%);
+        font-size: larger;
+        font-weight: bolder;
+    }
+}
+
+.menu-nav.open {
+    transform: translateX(0);
+}
+
+button {
+    padding: 30px 90px;
+    color: white;
+    background-color: hsl(256, 26%, 20%);
+    border: 3px solid white;
+}
